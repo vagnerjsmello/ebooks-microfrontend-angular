@@ -12,6 +12,12 @@ export const routes: Routes = [
     // @ts-ignore
     loadComponent: () =>
       import('mfe-ebook-details/EbookDetailsComponent').then(m => m.EbookDetailsComponent),
+  },
+  {
+    path: 'users',
+    // @ts-ignore
+    loadComponent: () =>
+      import('mfe-users/UserDashboardComponent').then(m => m.UserDashboardComponent),
   }
 ];
 
