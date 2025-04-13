@@ -1,0 +1,60 @@
+.ebook-list {
+  padding: 2rem;
+
+  .title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #222;
+    text-align: center;
+  }
+
+  .loading,
+  .error {
+    font-size: 1.2rem;
+    color: #555;
+    text-align: center;
+  }
+
+  .cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5rem;
+  }
+
+  .card {
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease-in-out;
+
+    &:hover {
+      transform: translateY(-5px);
+    }
+
+    h3 {
+      margin: 0 0 0.5rem;
+      font-size: 1.2rem;
+    }
+
+    .badge {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.4rem 0.75rem;
+      border-radius: 999px;
+      font-size: 0.85rem;
+      font-weight: 500;
+
+      &.available {
+        background-color: #d1e7dd;
+        color: #0f5132;
+      }
+
+      &.unavailable {
+        background-color: #f8d7da;
+        color: #842029;
+      }
+    }
+  }
+}
